@@ -1,0 +1,269 @@
+/* Documento CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Nunito:wght@200&family=Poppins:wght@300&family=Righteous&family=Roboto+Slab&family=Rubik:wght@300&family=Sarala&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --color1:#eeeeee;
+    --color2:#0088cc;
+    --color3:#979797;
+    --color4:#666666;
+    --color5:#000000;
+}
+
+body {
+    box-sizing:border-box;
+    font-size:17px;
+    font-family:'Poppins', sans-serif;
+    background-color:white;
+}
+
+#container {
+    display:flex;
+}
+
+#login-body_1 {
+    height:100% !important;
+    height:700px !important;
+    margin-top:5% !important;
+    display:flex !important;
+    margin-bottom:80px !important;
+    -webkit-box-shadow: 0px 1px 17px 1px rgba(0,0,0,0.65); 
+box-shadow: 0px 1px 17px 1px rgba(0,0,0,0.65);
+}
+
+#login-image {
+    background-color:var(--color2);
+    padding-bottom:160px;
+    /*padding-top:20px;*/
+    height:inherit !important;
+}
+
+#login-logo {
+    background-color:var(--color2);
+    width:100%;
+    height:150px;
+    margin:0 auto;
+    margin-top:196px !important;
+}
+
+#login-logo > img {
+    object-fit:none;
+    width:100% !important;
+    height:150px;
+}
+
+#description {
+    margin:0 auto;
+    display:block;
+    margin-top:20px;
+}
+#description > p {
+    font-weight:bolder;
+    /*padding-top:10px;*/
+}
+
+#login-body_2 {
+    background-color:white;
+    position:relative;
+    height:700px !important;
+    /*padding:15px;*/
+    z-index:10;
+}
+
+#help {
+    padding:10px;
+    background-color:white;
+}
+
+#help > button {
+    font-size:15px;
+    border:none;
+    background-color:inherit;
+    margin:0 15px;
+}
+
+#entrar_title {
+    font-weight:bold;
+    letter-spacing:2px;
+    text-align: center;
+    padding:10px;
+    margin-top:20px;
+    background-color:white;
+}
+
+#bemvindo_title {
+    font-weight:bold;
+    letter-spacing:2px;
+    text-align: center;
+    background-color:white;
+}
+
+#login_form {
+    display:flex;
+    justify-content: center;
+    background-color:white;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    margin-top:30px;
+    /*margin-bottom:80px;*/
+    width:80% !important;
+}
+
+label {
+    font-weight:bold;
+    margin-top:5px;
+}
+
+input {
+    width:100%;
+    height:50px;
+    border-radius:4px;
+    border:none;
+    margin-top:20px;
+    padding:15px;
+    border:1px solid var(--color1);
+}
+
+p > button {
+    border:none;
+    border-radius:4px;
+    width:100%;
+    height:50px;
+    margin:0 auto;
+    display:block;
+    background-color:var(--color2);
+    color:white;
+    font-weight:bold;
+    transition:all 0.2s;
+}
+
+#password {
+    float:right;
+}
+
+#password > button {
+    font-size:14px;
+    border:none;
+    background-color:inherit;
+    font-weight:bold;
+}
+
+p > button:hover {
+    background-color:#0088ccd8;
+}
+
+#createNewAccount {
+    margin-top:50px !important;
+    display:flex;
+    justify-content: center;
+}
+
+#createNewAccount > p {
+    margin-right:8px;
+}
+
+span {
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:all 0.2s;
+}
+
+#createNewAccount > span::after {
+    content:"";
+    display:block;
+    width:100%;
+    height:2px;
+    background-color:var(--color2);
+    left:0;
+    top:5px;
+    bottom:-10px;
+}
+
+#createNewAccount > span:hover {
+    color:rgba(71, 71, 71, 0.822);
+}
+
+#recuperarsenha:hover {
+    color:rgba(71, 71, 71, 0.822);
+    transition:all 0.2s;
+}
+
+#ajuda:hover {
+    color:rgba(71, 71, 71, 0.822);
+    transition:all 0.2s;
+}
+
+#ajuda_mensagem {
+    position:absolute;
+    height:150px !important;
+    text-align: justify;
+    padding:10px;
+    border-radius:4px;
+    background-color:white;
+    -webkit-box-shadow: 0px 1px 17px 1px rgba(0,0,0,0.34); 
+    box-shadow: 0px 1px 17px 1px rgba(0,0,0,0.34);
+    margin-left:12%;
+}
+
+#ajuda_mensagem > .fa {
+    float:right;
+    cursor:pointer;
+}
+
+#ajuda_mensagem > p {
+    margin-top:30px;
+}
+
+.close {
+    display:none;
+}
+/*#suasenha {
+    text-indent:5px;
+    width:100%;
+    height:40px;
+    border-radius:4px;
+    border:none;
+    margin-top:10px;
+    padding:15px;
+}*/
+
+@media screen and (max-width:860px) {
+    #login-body_1 {
+        width:100% !important;
+        margin-top:0 !important;
+        margin-bottom:0 !important;
+    }
+
+    #login-image {
+        margin-top:0 !important;
+        margin-bottom:0 !important;
+    }
+
+    #login_form {
+        padding:23px !important;
+    }
+}
+
+@media screen and (max-width:550px) {
+    body {
+        background-color:white;
+    }
+    #login-body_2 {
+        width:100% !important;
+        height:inherit !important;
+    }
+
+    #login-image {
+        display:none;
+    }
+}

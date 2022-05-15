@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas R. de Souza">
+    <meta name="description" content="Entre com sua conta do CodePro e comece as suas aulas de programação">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CodePro - Entrar</title>
+</head>
+<body>
+    <div id="container" class="w-100 h-100">
+        <div id="login-body_1" class="w-75 h-50 m-0 m-auto d-block">
+            <div id="login-image" class="w-50 h-50">
+                <div id="login-logo" class="mt-5">
+                    <img src="/img/logo-5.png">
+                </div>
+                <div id="description" class="w-50 h-auto">
+                    <p class="text-center">Maior escola de programação do mundo.</p>
+                </div>
+            </div>
+            <div id="login-body_2" class="w-50 h-auto">
+                <div id="help" class="w-100 h-auto text-end">
+                   <button id="ajuda">Need help ?</button>
+                </div>
+                <div id="ajuda_mensagem" class="w-75 close">
+                    <i onclick="closeDiv()" class="fa fa-close"></i>
+                    <p>Logue no CodePro com seu email e senha cadastrados no site. Caso queira recuperar senha, clique em <span style="font-weight:bold">Esqueceu a senha.</span></p>
+                </div>
+                <div id="entrar_title"class="w-100 h-auto">
+                    <h2>Entrar</h2>
+                </div>
+                <div id="bemvindo_title"class="w-100 h-auto">
+                    <h5>Bem-vindo ao CodePro</h5>
+                </div>
+                <div id="login_form" class="w-100 h-50">
+                    <form method="post" action="">
+                        <p>
+                            <label for="seuemail">Email</label>
+                            <input type="email" required="required" placeholder="seuemail@email.com" id="seuemail" name="seuemail">
+                        </p>
+
+                        <p>
+                            <label for="suasenha">Senha</label>
+                            <input type="password" required="required" placeholder="senha" id="suasenha" name="suasenha">
+                            <label id="password">
+                            <button type="button" id="recuperarsenha">Esqueceu a senha ?</button>
+                            </label>
+                        
+                        </p>
+
+                        <p>
+                            <button type="submit">Entrar</button>
+                        </p>
+                    </form>
+                </div>
+                <div id="createNewAccount" class="w-100 h-auto">
+                    <p>Novo CodePro ?</p> <span>Criar Conta</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/scripts/script.js"></script>
+</body>
+</html>
+
